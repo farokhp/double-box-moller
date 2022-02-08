@@ -1,0 +1,3339 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    110503,       3331]
+NotebookOptionsPosition[    109683,       3309]
+NotebookOutlinePosition[    110262,       3330]
+CellTagsIndexPosition[    110219,       3327]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"(*", " ", 
+   RowBox[{"As", " ", "and", " ", "At"}], " ", "*)"}],
+  FontFamily->"Consolas",
+  FontSize->20,
+  FontWeight->"Bold",
+  FontSlant->"Italic"]], "Code",
+ CellChangeTimes->{{3.8533030118163147`*^9, 3.8533030227743664`*^9}, {
+  3.8533033452304745`*^9, 3.8533033521824384`*^9}, {3.8533194629243402`*^9, 
+  3.8533196550841208`*^9}, {3.8533197333408375`*^9, 3.8533197381271086`*^9}, {
+  3.853319776229989*^9, 3.853319848178115*^9}, {3.853319883991053*^9, 
+  3.8533199000009885`*^9}, {3.8533200181740847`*^9, 3.853320019247823*^9}, {
+  3.853320058938717*^9, 
+  3.853320062856557*^9}},ExpressionUUID->"4da4fa90-f679-4078-80db-\
+85af2799e0ba"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{
+  3.8533201502118645`*^9},ExpressionUUID->"6a9460a4-3ada-4882-9e0b-\
+02e41922a8c5"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       TemplateBox[{"\[Omega]", "2"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "6"}], " ", 
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", 
+      TemplateBox[{"\[Omega]", "2"},
+       "IndexedDefault"], 
+      TemplateBox[{"\[Omega]", "1"},
+       "IndexedDefault"], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0"},
+     {"0", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"3", " ", 
+          TemplateBox[{"\[Omega]", "1"},
+           "IndexedDefault"]}], "2"]}], "+", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       SuperscriptBox["m", "4"], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0"},
+     {"0", 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"], "2"]}], "0", "0", "0", "0", "0", "0", 
+      TemplateBox[{"\[Omega]", "1"},
+       "IndexedDefault"], 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "6"},
+         "IndexedDefault"]}]}], 
+      RowBox[{"6", " ", 
+       TemplateBox[{"\[Omega]", "17"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
+     {
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"], "3"]}], 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"], "3"]}], "0", "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "17"},
+        "IndexedDefault"]}], 
+      TemplateBox[{"\[Omega]", "1"},
+       "IndexedDefault"], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"], 
+        SuperscriptBox["m", "2"]]}], "0", "0", 
+      FractionBox[
+       RowBox[{
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"], "-", 
+        TemplateBox[{"\[Omega]", "2"},
+         "IndexedDefault"]}], 
+       SuperscriptBox["m", "2"]], 
+      FractionBox[
+       RowBox[{
+        RowBox[{"-", 
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"]}], "+", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], 
+       SuperscriptBox["m", "2"]], "0", "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      FractionBox[
+       RowBox[{
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"], "-", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], 
+       SuperscriptBox["m", "2"]], "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", 
+      TemplateBox[{"\[Omega]", "3"},
+       "IndexedDefault"], "0", "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
+     {
+      RowBox[{
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["m", "2"], " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "2"], "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0", "0", "0", "0"},
+     {"0", 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"], "2"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], " ", 
+       SuperscriptBox["m", "4"], " ", 
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"]}], 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"], "2"]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"]}], "0", "0", "0", 
+      TemplateBox[{"\[Omega]", "1"},
+       "IndexedDefault"], 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0"},
+     {"0", 
+      TemplateBox[{"\[Omega]", "3"},
+       "IndexedDefault"], 
+      RowBox[{
+       SuperscriptBox["m", "4"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "1"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"8", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}]}], "0", "0", 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"], "4"]}], "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0", "0"},
+     {
+      FractionBox[
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}], "3"], 
+      FractionBox[
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"], "3"], "0", "0", "0", "0", 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "17"},
+        "IndexedDefault"]}], 
+      TemplateBox[{"\[Omega]", "10"},
+       "IndexedDefault"], "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"], "2"]}], "0", "0", "0", "0", 
+      TemplateBox[{"\[Omega]", "33"},
+       "IndexedDefault"], "0", "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {
+      TemplateBox[{"\[Omega]", "1"},
+       "IndexedDefault"], "0", "0", 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"], "2"]}], 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"], "2"]}], "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}]}], 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "26"},
+         "IndexedDefault"], "2"]}], "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0"},
+     {
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        TemplateBox[{"\[Omega]", "26"},
+         "IndexedDefault"]}], "+", 
+       FractionBox[
+        RowBox[{"5", " ", 
+         TemplateBox[{"\[Omega]", "35"},
+          "IndexedDefault"]}], "2"]}], "0", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], " ", 
+       SuperscriptBox["m", "4"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          TemplateBox[{"\[Omega]", "26"},
+           "IndexedDefault"], "2"], "+", 
+         FractionBox[
+          TemplateBox[{"\[Omega]", "35"},
+           "IndexedDefault"], "2"]}], ")"}]}], 
+      TemplateBox[{"\[Omega]", "26"},
+       "IndexedDefault"], 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         TemplateBox[{"\[Omega]", "26"},
+          "IndexedDefault"], "2"]}], "-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "35"},
+         "IndexedDefault"], "2"]}], 
+      RowBox[{
+       FractionBox[
+        TemplateBox[{"\[Omega]", "9"},
+         "IndexedDefault"], "2"], "-", 
+       TemplateBox[{"\[Omega]", "20"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"3", " ", 
+           TemplateBox[{"\[Omega]", "26"},
+            "IndexedDefault"]}], "2"], "-", 
+         FractionBox[
+          RowBox[{"11", " ", 
+           TemplateBox[{"\[Omega]", "35"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], "0", "0", "0", "0", "0", 
+      "0", 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox["m", "2"]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"5", " ", 
+           TemplateBox[{"\[Omega]", "26"},
+            "IndexedDefault"]}], "2"], "+", 
+         FractionBox[
+          TemplateBox[{"\[Omega]", "35"},
+           "IndexedDefault"], "2"]}], ")"}]}], 
+      RowBox[{
+       FractionBox[
+        TemplateBox[{"\[Omega]", "26"},
+         "IndexedDefault"], "2"], "+", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "35"},
+         "IndexedDefault"], "2"]}], "0", "0", "0", "0", "0", "0", 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"3", " ", 
+           TemplateBox[{"\[Omega]", "26"},
+            "IndexedDefault"]}], "2"], "+", 
+         FractionBox[
+          TemplateBox[{"\[Omega]", "35"},
+           "IndexedDefault"], "2"]}], ")"}]}], 
+      RowBox[{"3", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "11"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "35"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0"},
+     {
+      FractionBox[
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"], "2"], "0", 
+      RowBox[{
+       FractionBox["1", "4"], " ", 
+       SuperscriptBox["m", "4"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      FractionBox[
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"], "2"], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "+", 
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", 
+      RowBox[{
+       FractionBox["1", "4"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "1"},
+           "IndexedDefault"]}], "-", 
+         RowBox[{"3", " ", 
+          TemplateBox[{"\[Omega]", "10"},
+           "IndexedDefault"]}]}], ")"}]}], "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "-", 
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "-", 
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "26"},
+            "IndexedDefault"], "2"]}], "+", 
+         FractionBox[
+          TemplateBox[{"\[Omega]", "35"},
+           "IndexedDefault"], "2"]}], ")"}]}], "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0"},
+     {
+      FractionBox[
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "3"], 
+      FractionBox[
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"], "3"], "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"]}], "0", "0", 
+      TemplateBox[{"\[Omega]", "1"},
+       "IndexedDefault"], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
+     {"0", 
+      FractionBox[
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"], "2"], "0", "0", "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"], "4"]}], "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0"},
+     {
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       FractionBox["1", "4"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["m", "4"], " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "2"], "0", "0", "0", 
+      RowBox[{
+       FractionBox[
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"], "2"], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", 
+      RowBox[{
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", 
+      FractionBox[
+       RowBox[{
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"], "-", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}], 
+       RowBox[{"2", " ", 
+        SuperscriptBox["m", "2"]}]], "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       FractionBox["3", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"2", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "25"},
+             "IndexedDefault"]}], "2"]}], "+", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], "0", "0", "0", "0", "0", 
+      "0"},
+     {"0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "+", 
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       SuperscriptBox["m", "4"], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", "0", "0", 
+      TemplateBox[{"\[Omega]", "3"},
+       "IndexedDefault"], "0", 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "-", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "-", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", "0", 
+      RowBox[{"2", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"-", 
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"]}], "+", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], 
+       SuperscriptBox["m", "2"]], "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "25"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0"},
+     {
+      FractionBox[
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "25"},
+            "IndexedDefault"]}], "2"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         TemplateBox[{"\[Omega]", "31"},
+          "IndexedDefault"]}]}], 
+       SuperscriptBox["m", "2"]], 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "25"},
+             "IndexedDefault"]}], "2"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], 
+        SuperscriptBox["m", "2"]]}], 
+      RowBox[{"\[ImaginaryI]", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "25"},
+        "IndexedDefault"]}], "0", "0", 
+      FractionBox[
+       RowBox[{"\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "18"},
+         "IndexedDefault"]}], 
+       SuperscriptBox["m", "2"]], 
+      FractionBox[
+       RowBox[{
+        FractionBox[
+         RowBox[{"\[ImaginaryI]", " ", 
+          TemplateBox[{"\[Omega]", "25"},
+           "IndexedDefault"]}], "2"], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         TemplateBox[{"\[Omega]", "31"},
+          "IndexedDefault"]}]}], 
+       SuperscriptBox["m", "2"]], "0", 
+      FractionBox[
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "\[ImaginaryI]"}], " ", 
+           TemplateBox[{"\[Omega]", "25"},
+            "IndexedDefault"]}], "-", 
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "31"},
+             "IndexedDefault"]}], "2"]}], ")"}]}], 
+       SuperscriptBox["m", "2"]], 
+      FractionBox[
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "25"},
+             "IndexedDefault"]}], "2"], "-", 
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "31"},
+             "IndexedDefault"]}], "2"]}], ")"}]}], 
+       SuperscriptBox["m", "2"]], "0", "0", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "\[ImaginaryI]"}], " ", 
+        TemplateBox[{"\[Omega]", "25"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "31"},
+         "IndexedDefault"]}]}], "0", "0", 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"\[ImaginaryI]", " ", 
+              TemplateBox[{"\[Omega]", "25"},
+               "IndexedDefault"]}], "2"]}], "-", 
+           FractionBox[
+            RowBox[{"\[ImaginaryI]", " ", 
+             TemplateBox[{"\[Omega]", "31"},
+              "IndexedDefault"]}], "2"]}], ")"}]}], 
+        SuperscriptBox["m", "4"]]}], "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"\[ImaginaryI]", " ", 
+              TemplateBox[{"\[Omega]", "25"},
+               "IndexedDefault"]}], "2"]}], "-", 
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "31"},
+             "IndexedDefault"]}]}], ")"}]}], 
+        SuperscriptBox["m", "2"]]}], 
+      FractionBox[
+       RowBox[{"3", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{"\[ImaginaryI]", " ", 
+             TemplateBox[{"\[Omega]", "25"},
+              "IndexedDefault"]}], "2"]}], "-", 
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "31"},
+             "IndexedDefault"]}], "2"]}], ")"}]}], 
+       SuperscriptBox["m", "2"]], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "12"},
+         "IndexedDefault"]}]}], "0", "0", "0", "0", "0", "0"},
+     {
+      RowBox[{
+       FractionBox["5", "12"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "3"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "4"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "1"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "1"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          TemplateBox[{"\[Omega]", "26"},
+           "IndexedDefault"], "2"], "-", 
+         FractionBox[
+          TemplateBox[{"\[Omega]", "35"},
+           "IndexedDefault"], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0"},
+     {
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{"6", " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", "0", 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"], 
+        SuperscriptBox["m", "2"]]}], "0", 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", "0", "0", "0", 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", "0", "0"},
+     {
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "25"},
+         "IndexedDefault"]}], "+", 
+       FractionBox[
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         TemplateBox[{"\[Omega]", "31"},
+          "IndexedDefault"]}], "6"]}], 
+      RowBox[{
+       FractionBox["2", "3"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "9"}], " ", "\[ImaginaryI]", " ", 
+          TemplateBox[{"\[Omega]", "25"},
+           "IndexedDefault"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", 
+       SuperscriptBox["m", "4"], " ", 
+       TemplateBox[{"\[Omega]", "25"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "25"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "25"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "25"},
+         "IndexedDefault"]}], "+", 
+       FractionBox[
+        RowBox[{"\[ImaginaryI]", " ", 
+         TemplateBox[{"\[Omega]", "31"},
+          "IndexedDefault"]}], "2"]}], 
+      FractionBox[
+       RowBox[{"\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "25"},
+         "IndexedDefault"]}], "2"], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "\[ImaginaryI]"}], " ", 
+          TemplateBox[{"\[Omega]", "25"},
+           "IndexedDefault"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "25"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "31"},
+        "IndexedDefault"]}], 
+      RowBox[{"4", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"\[ImaginaryI]", " ", 
+          TemplateBox[{"\[Omega]", "25"},
+           "IndexedDefault"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "25"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "31"},
+        "IndexedDefault"]}], "0", "0", 
+      RowBox[{"4", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "25"},
+             "IndexedDefault"]}], "2"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "25"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "18"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "\[ImaginaryI]"}], " ", 
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "31"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "8"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "25"},
+             "IndexedDefault"]}], "2"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "21"},
+         "IndexedDefault"]}], "-", 
+       TemplateBox[{"\[Omega]", "24"},
+        "IndexedDefault"], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "34"},
+         "IndexedDefault"]}]}], 
+      RowBox[{"4", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"\[ImaginaryI]", " ", 
+          TemplateBox[{"\[Omega]", "25"},
+           "IndexedDefault"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "\[ImaginaryI]"}], " ", 
+          TemplateBox[{"\[Omega]", "25"},
+           "IndexedDefault"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "25"},
+             "IndexedDefault"]}], "2"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "\[ImaginaryI]"}], " ", 
+        TemplateBox[{"\[Omega]", "25"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "31"},
+         "IndexedDefault"]}]}], "0", 
+      RowBox[{"2", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "25"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "31"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"], "+", 
+          TemplateBox[{"\[Omega]", "10"},
+           "IndexedDefault"]}], ")"}]}], "-", 
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "12"},
+         "IndexedDefault"]}]}], 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "25"},
+            "IndexedDefault"]}], "2"], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], "0", 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "25"},
+             "IndexedDefault"]}], "2"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}]},
+     {
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"4", " ", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "4"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"11", " ", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "-", 
+         RowBox[{"3", " ", 
+          TemplateBox[{"\[Omega]", "10"},
+           "IndexedDefault"]}]}], ")"}]}], 
+      FractionBox[
+       RowBox[{"5", " ", 
+        SuperscriptBox["m", "4"], " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "2"], "0", 
+      RowBox[{"4", " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "3"}], " ", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", 
+      RowBox[{
+       FractionBox["3", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"], "+", 
+         RowBox[{"7", " ", 
+          TemplateBox[{"\[Omega]", "10"},
+           "IndexedDefault"]}]}], ")"}]}], "0", 
+      RowBox[{"6", " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox["m", "2"]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"5", " ", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"4", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "2"}], " ", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"], "+", 
+         RowBox[{"3", " ", 
+          TemplateBox[{"\[Omega]", "10"},
+           "IndexedDefault"]}]}], 
+        RowBox[{"2", " ", 
+         SuperscriptBox["m", "2"]}]]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"6", " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox["m", "2"]}], " ", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "2"}], " ", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      TemplateBox[{"\[Omega]", "35"},
+       "IndexedDefault"], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"], "-", 
+         RowBox[{"3", " ", 
+          TemplateBox[{"\[Omega]", "10"},
+           "IndexedDefault"]}]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["3", "2"]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"], "-", 
+         RowBox[{"3", " ", 
+          TemplateBox[{"\[Omega]", "10"},
+           "IndexedDefault"]}]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "25"},
+             "IndexedDefault"]}], "2"]}], "-", 
+         FractionBox[
+          RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "25"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}]},
+     {
+      FractionBox[
+       RowBox[{"7", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "2"], 
+      RowBox[{
+       FractionBox[
+        RowBox[{"9", " ", 
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"]}], "2"], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{"4", " ", 
+       SuperscriptBox["m", "4"], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"12", " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"], "2"]}], 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"], "2"]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "3"}], " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}]}], 
+      RowBox[{"5", " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"4", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      FractionBox[
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"], 
+       SuperscriptBox["m", "2"]], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{"3", " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox["m", "2"]}], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "25"},
+             "IndexedDefault"]}], "2"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}]},
+     {
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"17", " ", 
+          TemplateBox[{"\[Omega]", "1"},
+           "IndexedDefault"]}], "12"]}], "+", 
+       RowBox[{"6", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "-", 
+       FractionBox[
+        RowBox[{"5", " ", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], "3"]}], 
+      RowBox[{
+       FractionBox["1", "12"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "1"},
+           "IndexedDefault"]}], "+", 
+         RowBox[{"75", " ", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       SuperscriptBox["m", "4"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "2"}], " ", 
+          TemplateBox[{"\[Omega]", "1"},
+           "IndexedDefault"]}], "+", 
+         RowBox[{"7", " ", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"4", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"19", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}]}], "0", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"3", " ", 
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"]}], "4"], "-", 
+       FractionBox[
+        RowBox[{"5", " ", 
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"]}], "2"], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"], "2"]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "2"}], " ", 
+          TemplateBox[{"\[Omega]", "1"},
+           "IndexedDefault"]}], "-", 
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{
+        FractionBox["3", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"], "+", 
+          TemplateBox[{"\[Omega]", "10"},
+           "IndexedDefault"]}], ")"}]}]}], "0", 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "-", 
+         RowBox[{"3", " ", 
+          TemplateBox[{"\[Omega]", "3"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "1"},
+          "IndexedDefault"], "+", 
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"3", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"5", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}]}], 
+      FractionBox[
+       RowBox[{
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"], "-", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}], 
+       RowBox[{"2", " ", 
+        SuperscriptBox["m", "2"]}]], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{"6", " ", 
+       TemplateBox[{"\[Omega]", "3"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["3", "2"]}], " ", 
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"6", " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"4", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"5", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"3", " ", 
+           TemplateBox[{"\[Omega]", "26"},
+            "IndexedDefault"]}], "2"], "-", 
+         FractionBox[
+          TemplateBox[{"\[Omega]", "35"},
+           "IndexedDefault"], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "3"}], " ", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"4", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"4", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       FractionBox["3", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "3"},
+          "IndexedDefault"], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "25"},
+             "IndexedDefault"]}], "2"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "\[ImaginaryI]"}], " ", 
+          TemplateBox[{"\[Omega]", "25"},
+           "IndexedDefault"]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "31"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Input",
+ CellChangeTimes->{{3.8533201527039714`*^9, 
+  3.853320176153615*^9}},ExpressionUUID->"9909b888-82d4-4d0b-9e80-\
+7b6cbe6f943c"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {
+      RowBox[{
+       RowBox[{"-", "8"}], " ", 
+       TemplateBox[{"\[Omega]", "13"},
+        "IndexedDefault"]}], "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "9"},
+         "IndexedDefault"]}]}], 
+      RowBox[{"12", " ", 
+       TemplateBox[{"\[Omega]", "13"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0"},
+     {
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"]}], "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "13"},
+        "IndexedDefault"]}], 
+      TemplateBox[{"\[Omega]", "7"},
+       "IndexedDefault"], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {
+      FractionBox[
+       TemplateBox[{"\[Omega]", "8"},
+        "IndexedDefault"], 
+       SuperscriptBox["m", "2"]], "0", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], " ", 
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "8"},
+        "IndexedDefault"]}], "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"3", " ", 
+         TemplateBox[{"\[Omega]", "8"},
+          "IndexedDefault"]}], 
+        RowBox[{"2", " ", 
+         SuperscriptBox["m", "2"]}]]}], "0", "0", "0", "0", "0", 
+      TemplateBox[{"\[Omega]", "7"},
+       "IndexedDefault"], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["2", "3"]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "3"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", "0", "0", 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       TemplateBox[{"\[Omega]", "13"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0"},
+     {"0", 
+      RowBox[{"2", " ", 
+       TemplateBox[{"\[Omega]", "13"},
+        "IndexedDefault"]}], "0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", "0", "0", 
+      TemplateBox[{"\[Omega]", "32"},
+       "IndexedDefault"], "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{"6", " ", 
+       TemplateBox[{"\[Omega]", "13"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "9"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0"},
+     {
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"5", " ", 
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"]}], 
+        RowBox[{"2", " ", 
+         SuperscriptBox["m", "2"]}]]}], "0", "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "13"},
+         "IndexedDefault"], 
+        SuperscriptBox["m", "2"]]}], 
+      FractionBox[
+       RowBox[{"5", " ", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], 
+       RowBox[{"2", " ", 
+        SuperscriptBox["m", "2"]}]], "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
+     {
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"]}], "0", "0", 
+      FractionBox[
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"], "2"], 
+      TemplateBox[{"\[Omega]", "7"},
+       "IndexedDefault"], "0", 
+      FractionBox[
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "2"], "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox["m", "2"]}], " ", 
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "15"},
+        "IndexedDefault"]}], 
+      TemplateBox[{"\[Omega]", "7"},
+       "IndexedDefault"], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0"},
+     {
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"9", " ", 
+          TemplateBox[{"\[Omega]", "26"},
+           "IndexedDefault"]}], "2"]}], "+", 
+       RowBox[{"5", " ", 
+        TemplateBox[{"\[Omega]", "27"},
+         "IndexedDefault"]}]}], "0", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], " ", 
+       SuperscriptBox["m", "4"], " ", 
+       TemplateBox[{"\[Omega]", "27"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "1"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "15"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "27"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       FractionBox[
+        TemplateBox[{"\[Omega]", "5"},
+         "IndexedDefault"], "2"], "-", 
+       TemplateBox[{"\[Omega]", "19"},
+        "IndexedDefault"], "+", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "28"},
+         "IndexedDefault"], "2"]}], 
+      RowBox[{
+       FractionBox[
+        RowBox[{"7", " ", 
+         TemplateBox[{"\[Omega]", "26"},
+          "IndexedDefault"]}], "2"], "-", 
+       FractionBox[
+        RowBox[{"11", " ", 
+         TemplateBox[{"\[Omega]", "27"},
+          "IndexedDefault"]}], "2"]}], "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "26"},
+          "IndexedDefault"], "+", 
+         FractionBox[
+          TemplateBox[{"\[Omega]", "27"},
+           "IndexedDefault"], "2"]}], ")"}]}], 
+      TemplateBox[{"\[Omega]", "27"},
+       "IndexedDefault"], "0", "0", "0", "0", "0", "0", 
+      RowBox[{"4", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          TemplateBox[{"\[Omega]", "26"},
+           "IndexedDefault"], "2"], "+", 
+         FractionBox[
+          TemplateBox[{"\[Omega]", "27"},
+           "IndexedDefault"], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "11"},
+         "IndexedDefault"]}]}], 
+      RowBox[{"4", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          TemplateBox[{"\[Omega]", "26"},
+           "IndexedDefault"], "2"], "-", 
+         TemplateBox[{"\[Omega]", "27"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0"},
+     {
+      RowBox[{
+       FractionBox["1", "4"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "5"}], " ", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "-", 
+         RowBox[{"4", " ", 
+          TemplateBox[{"\[Omega]", "8"},
+           "IndexedDefault"]}], "+", 
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "10"},
+           "IndexedDefault"]}]}], ")"}]}], "0", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", "4"]}], " ", 
+       SuperscriptBox["m", "4"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "8"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      FractionBox[
+       TemplateBox[{"\[Omega]", "13"},
+        "IndexedDefault"], "2"], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"], "+", 
+       FractionBox[
+        RowBox[{"3", " ", 
+         TemplateBox[{"\[Omega]", "8"},
+          "IndexedDefault"]}], "2"], "-", 
+       FractionBox[
+        RowBox[{"3", " ", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], "4"]}], "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", "0", "0", "0", "0", 
+      TemplateBox[{"\[Omega]", "10"},
+       "IndexedDefault"], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "1"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "15"},
+        "IndexedDefault"], "+", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "27"},
+         "IndexedDefault"], "2"]}], 
+      TemplateBox[{"\[Omega]", "7"},
+       "IndexedDefault"], "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {
+      RowBox[{
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       FractionBox["1", "4"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "5"}], " ", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", 
+      RowBox[{
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", 
+      FractionBox[
+       RowBox[{
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"], "-", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}], 
+       RowBox[{"2", " ", 
+        SuperscriptBox["m", "2"]}]], "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", 
+      RowBox[{
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["3", "2"]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"2", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              TemplateBox[{"\[Omega]", "3"},
+               "IndexedDefault"], "2"]}], "+", 
+            TemplateBox[{"\[Omega]", "14"},
+             "IndexedDefault"]}], ")"}]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "29"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], "0", "0", "0", "0", "0", 
+      "0"},
+     {"0", 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"], "2"]}], "0", "0", "0", "0", "0", "0", 
+      TemplateBox[{"\[Omega]", "7"},
+       "IndexedDefault"], 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", 
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"]}], "0", "0", 
+      RowBox[{"2", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", 
+      FractionBox[
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"], 
+       SuperscriptBox["m", "2"]], "0", "0", "0", "0", "0", "0", "0", "0", "0",
+       "0", 
+      RowBox[{"2", " ", 
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{"4", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "3"},
+            "IndexedDefault"], "2"]}], "+", 
+         TemplateBox[{"\[Omega]", "14"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", "0", "0", "0", "0"},
+     {
+      FractionBox[
+       RowBox[{
+        RowBox[{"5", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             TemplateBox[{"\[Omega]", "3"},
+              "IndexedDefault"], "2"]}], "+", 
+           TemplateBox[{"\[Omega]", "14"},
+            "IndexedDefault"]}], ")"}]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         TemplateBox[{"\[Omega]", "29"},
+          "IndexedDefault"]}]}], 
+       SuperscriptBox["m", "2"]], 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"\[ImaginaryI]", " ", 
+         TemplateBox[{"\[Omega]", "29"},
+          "IndexedDefault"]}], 
+        RowBox[{"2", " ", 
+         SuperscriptBox["m", "2"]}]]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "3"},
+            "IndexedDefault"], "2"]}], "+", 
+         TemplateBox[{"\[Omega]", "14"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", 
+      RowBox[{
+       RowBox[{"-", "\[ImaginaryI]"}], " ", 
+       TemplateBox[{"\[Omega]", "16"},
+        "IndexedDefault"]}], 
+      FractionBox[
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "5"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             TemplateBox[{"\[Omega]", "3"},
+              "IndexedDefault"], "2"]}], "+", 
+           TemplateBox[{"\[Omega]", "14"},
+            "IndexedDefault"]}], ")"}]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         TemplateBox[{"\[Omega]", "29"},
+          "IndexedDefault"]}]}], 
+       SuperscriptBox["m", "2"]], "0", 
+      FractionBox[
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"], "+", 
+          FractionBox[
+           RowBox[{"\[ImaginaryI]", " ", 
+            TemplateBox[{"\[Omega]", "29"},
+             "IndexedDefault"]}], "2"]}], ")"}]}], 
+       SuperscriptBox["m", "2"]], 
+      FractionBox[
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             TemplateBox[{"\[Omega]", "3"},
+              "IndexedDefault"], "2"]}], "+", 
+           TemplateBox[{"\[Omega]", "14"},
+            "IndexedDefault"]}], ")"}]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         TemplateBox[{"\[Omega]", "29"},
+          "IndexedDefault"]}]}], 
+       SuperscriptBox["m", "2"]], "0", "0", 
+      RowBox[{
+       RowBox[{"4", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "29"},
+         "IndexedDefault"]}]}], "0", "0", 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"\[ImaginaryI]", " ", 
+         TemplateBox[{"\[Omega]", "29"},
+          "IndexedDefault"]}], 
+        SuperscriptBox["m", "4"]]}], "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", 
+      FractionBox[
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"], "-", 
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "29"},
+            "IndexedDefault"]}]}], ")"}]}], 
+       SuperscriptBox["m", "2"]], 
+      FractionBox[
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "29"},
+         "IndexedDefault"]}], 
+       RowBox[{"2", " ", 
+        SuperscriptBox["m", "2"]}]], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "12"},
+         "IndexedDefault"]}]}], "0", "0", "0", "0", "0", "0"},
+     {
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"5", " ", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], "12"]}], 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"], "3"]}], "0", "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"], "4"]}], "0", "0", "0", "0", 
+      RowBox[{"2", " ", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       TemplateBox[{"\[Omega]", "13"},
+        "IndexedDefault"]}], 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["m", "2"], " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}], "2"], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "1"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "15"},
+        "IndexedDefault"], "-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "27"},
+         "IndexedDefault"], "2"]}], 
+      TemplateBox[{"\[Omega]", "10"},
+       "IndexedDefault"], 
+      TemplateBox[{"\[Omega]", "10"},
+       "IndexedDefault"], "0", "0", "0", "0", 
+      TemplateBox[{"\[Omega]", "10"},
+       "IndexedDefault"], "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      "0", "0", "0", "0", "0", "0", "0"},
+     {
+      RowBox[{
+       RowBox[{
+        FractionBox["29", "3"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "-", 
+       FractionBox[
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         TemplateBox[{"\[Omega]", "29"},
+          "IndexedDefault"]}], "6"]}], 
+      RowBox[{
+       RowBox[{
+        FractionBox["34", "3"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "+", 
+       FractionBox[
+        RowBox[{"\[ImaginaryI]", " ", 
+         TemplateBox[{"\[Omega]", "29"},
+          "IndexedDefault"]}], "3"]}], 
+      RowBox[{"8", " ", 
+       SuperscriptBox["m", "4"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "3"},
+            "IndexedDefault"], "2"]}], "+", 
+         TemplateBox[{"\[Omega]", "14"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"4", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "3"},
+            "IndexedDefault"], "2"]}], "+", 
+         TemplateBox[{"\[Omega]", "14"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"24", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "3"},
+            "IndexedDefault"], "2"]}], "+", 
+         TemplateBox[{"\[Omega]", "14"},
+          "IndexedDefault"]}], ")"}]}], "0", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "3"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "-", 
+       FractionBox[
+        RowBox[{"\[ImaginaryI]", " ", 
+         TemplateBox[{"\[Omega]", "29"},
+          "IndexedDefault"]}], "2"]}], 
+      RowBox[{
+       FractionBox[
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"], "2"], "-", 
+       TemplateBox[{"\[Omega]", "14"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "29"},
+         "IndexedDefault"]}]}], 
+      RowBox[{"8", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "3"},
+            "IndexedDefault"], "2"]}], "+", 
+         TemplateBox[{"\[Omega]", "14"},
+          "IndexedDefault"]}], ")"}]}], "0", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "8"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "29"},
+         "IndexedDefault"]}]}], 
+      RowBox[{"4", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "3"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              TemplateBox[{"\[Omega]", "3"},
+               "IndexedDefault"], "2"]}], "+", 
+            TemplateBox[{"\[Omega]", "14"},
+             "IndexedDefault"]}], ")"}]}], "+", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "29"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{"8", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "3"},
+            "IndexedDefault"], "2"]}], "+", 
+         TemplateBox[{"\[Omega]", "14"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"4", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "3"},
+            "IndexedDefault"], "2"]}], "+", 
+         TemplateBox[{"\[Omega]", "14"},
+          "IndexedDefault"], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "29"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], "0", "0", 
+      RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "29"},
+        "IndexedDefault"]}], 
+      RowBox[{"12", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "3"},
+            "IndexedDefault"], "2"]}], "+", 
+         TemplateBox[{"\[Omega]", "14"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "16"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        SuperscriptBox["m", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SuperscriptBox["m", "2"], " ", 
+        TemplateBox[{"\[Omega]", "29"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "29"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "2"},
+        "IndexedDefault"], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "3"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "4"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"], "+", 
+       TemplateBox[{"\[Omega]", "22"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "23"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "12"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "29"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "29"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "29"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"4", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "29"},
+         "IndexedDefault"]}]}], "0", "0", 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "3"},
+            "IndexedDefault"], "2"]}], "+", 
+         TemplateBox[{"\[Omega]", "14"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"4", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "3"},
+            "IndexedDefault"], "2"]}], "+", 
+         TemplateBox[{"\[Omega]", "14"},
+          "IndexedDefault"], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "29"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "12"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "29"},
+         "IndexedDefault"]}]}], "0", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       TemplateBox[{"\[Omega]", "29"},
+        "IndexedDefault"]}]},
+     {
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         RowBox[{"6", " ", 
+          TemplateBox[{"\[Omega]", "8"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["3", "4"]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       SuperscriptBox["m", "4"], " ", 
+       TemplateBox[{"\[Omega]", "8"},
+        "IndexedDefault"]}], 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "+", 
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "8"},
+           "IndexedDefault"]}]}], ")"}]}], "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "+", 
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "8"},
+           "IndexedDefault"]}], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", 
+      RowBox[{
+       FractionBox["3", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "11"}], " ", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "-", 
+         RowBox[{"8", " ", 
+          TemplateBox[{"\[Omega]", "8"},
+           "IndexedDefault"]}], "+", 
+         RowBox[{"7", " ", 
+          TemplateBox[{"\[Omega]", "10"},
+           "IndexedDefault"]}]}], ")"}]}], "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox["m", "2"]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"5", " ", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "-", 
+         RowBox[{"8", " ", 
+          TemplateBox[{"\[Omega]", "8"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"2", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "8"},
+           "IndexedDefault"]}]}], ")"}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}]}], 
+      FractionBox[
+       RowBox[{"3", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"], "-", 
+          TemplateBox[{"\[Omega]", "10"},
+           "IndexedDefault"]}], ")"}]}], 
+       RowBox[{"2", " ", 
+        SuperscriptBox["m", "2"]}]], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "8"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", "0", 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox["m", "2"]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "8"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "-", 
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "8"},
+           "IndexedDefault"]}], "+", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "26"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "27"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         RowBox[{"4", " ", 
+          TemplateBox[{"\[Omega]", "8"},
+           "IndexedDefault"]}], "+", 
+         RowBox[{"2", " ", 
+          TemplateBox[{"\[Omega]", "10"},
+           "IndexedDefault"]}]}], ")"}]}], "0", "0", 
+      RowBox[{
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "8"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"6", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["9", "2"]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"4", " ", 
+        SuperscriptBox["m", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SuperscriptBox["m", "2"], " ", 
+        TemplateBox[{"\[Omega]", "29"},
+         "IndexedDefault"]}]}], "0", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           TemplateBox[{"\[Omega]", "3"},
+            "IndexedDefault"], "2"]}], "+", 
+         TemplateBox[{"\[Omega]", "14"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0"},
+     {"0", 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", "0", "0", "0", "0", 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", "0", "0", "0", "0", "0", "0", 
+      "0", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}]}], "0", "0", "0", "0", "0", "0", 
+      RowBox[{"4", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", "0", "0", 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", "\[ImaginaryI]"}], " ", 
+       TemplateBox[{"\[Omega]", "29"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}]},
+     {
+      RowBox[{
+       FractionBox[
+        RowBox[{"9", " ", 
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"]}], "4"], "-", 
+       FractionBox[
+        RowBox[{"5", " ", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], "3"]}], 
+      RowBox[{
+       FractionBox["1", "12"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "3"}], " ", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", 
+      RowBox[{"-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"], "2"]}], 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"7", " ", 
+          TemplateBox[{"\[Omega]", "7"},
+           "IndexedDefault"]}], "4"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["3", "2"]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], "0", 
+      RowBox[{"2", " ", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       SuperscriptBox["m", "2"], " ", 
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"]}], 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"]}], 
+      FractionBox[
+       RowBox[{
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"], "-", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}], 
+       RowBox[{"2", " ", 
+        SuperscriptBox["m", "2"]}]], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], "0", 
+      RowBox[{
+       RowBox[{"-", "4"}], " ", 
+       TemplateBox[{"\[Omega]", "13"},
+        "IndexedDefault"]}], 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["m", "2"], " ", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "2"], 
+      RowBox[{
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "-", 
+       RowBox[{"5", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "26"},
+        "IndexedDefault"], "-", 
+       FractionBox[
+        TemplateBox[{"\[Omega]", "27"},
+         "IndexedDefault"], "2"]}], 
+      RowBox[{
+       RowBox[{"-", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "+", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{"2", " ", 
+        TemplateBox[{"\[Omega]", "7"},
+         "IndexedDefault"]}], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"], "-", 
+       RowBox[{"3", " ", 
+        TemplateBox[{"\[Omega]", "10"},
+         "IndexedDefault"]}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["3", "2"]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         TemplateBox[{"\[Omega]", "7"},
+          "IndexedDefault"], "-", 
+         TemplateBox[{"\[Omega]", "10"},
+          "IndexedDefault"]}], ")"}]}], 
+      RowBox[{"2", " ", 
+       SuperscriptBox["m", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "2"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              TemplateBox[{"\[Omega]", "3"},
+               "IndexedDefault"], "2"]}], "+", 
+            TemplateBox[{"\[Omega]", "14"},
+             "IndexedDefault"]}], ")"}]}], "-", 
+         FractionBox[
+          RowBox[{"\[ImaginaryI]", " ", 
+           TemplateBox[{"\[Omega]", "29"},
+            "IndexedDefault"]}], "2"]}], ")"}]}], 
+      TemplateBox[{"\[Omega]", "7"},
+       "IndexedDefault"], 
+      RowBox[{"-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            TemplateBox[{"\[Omega]", "3"},
+             "IndexedDefault"], "2"]}], "+", 
+          TemplateBox[{"\[Omega]", "14"},
+           "IndexedDefault"]}], ")"}]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        TemplateBox[{"\[Omega]", "29"},
+         "IndexedDefault"]}]}], 
+      TemplateBox[{"\[Omega]", "10"},
+       "IndexedDefault"], "0", 
+      RowBox[{
+       TemplateBox[{"\[Omega]", "7"},
+        "IndexedDefault"], "-", 
+       TemplateBox[{"\[Omega]", "10"},
+        "IndexedDefault"]}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}]}]}]], "Input",
+ CellChangeTimes->{{3.8533201812866993`*^9, 
+  3.853320194966815*^9}},ExpressionUUID->"74172d30-d9ea-46b9-bdc6-\
+eadd5729a0a8"]
+},
+Evaluator->"2nd",
+WindowSize->{1909., 1012.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingPageRange->{Automatic, Automatic},
+TaggingRules->{
+ "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
+CellContext->Notebook,
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1d31b747-2505-4b7c-ad49-9191656beb66"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 681, 15, 45, "Code",ExpressionUUID->"4da4fa90-f679-4078-80db-85af2799e0ba"],
+Cell[1242, 37, 130, 3, 21, "Input",ExpressionUUID->"6a9460a4-3ada-4882-9e0b-02e41922a8c5"],
+Cell[1375, 42, 58100, 1761, 685, "Input",ExpressionUUID->"9909b888-82d4-4d0b-9e80-7b6cbe6f943c"],
+Cell[59478, 1805, 50201, 1502, 633, "Input",ExpressionUUID->"74172d30-d9ea-46b9-bdc6-eadd5729a0a8"]
+}
+]
+*)
+
